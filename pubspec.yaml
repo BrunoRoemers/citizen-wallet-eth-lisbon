@@ -49,7 +49,7 @@ dependencies:
   username_gen: ^1.0.4
   file_picker: ^5.3.3
   universal_io: ^2.2.2
-  share_plus: ^8.0.0
+  share_plus: ^7.2.0
   sqflite_common: ^2.5.0
   image: ^4.0.17
   qr_flutter: ^4.1.0
