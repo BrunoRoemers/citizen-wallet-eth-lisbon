@@ -1,6 +1,49 @@
 [
     {
         "community": {
+            "name": "USDC on Goerli",
+            "description": "The community of people using USDC on Goerli Testnet.",
+            "url": "https://goerli.net/",
+            "alias": "usdc.goerli",
+            "logo": "https://raw.githubusercontent.com/goerli/goer-logo/661d75b291f7b545cc07ea5901cb0a6acc693d22/assets/run-goerli-outlines.svg"
+        },
+        "scan": {
+            "url": "https://goerli.etherscan.io/",
+            "name": "Goerli Explorer"
+        },
+        "indexer": {
+            "url": "NOT_AVAILABLE",
+            "ipfs_url": "NOT_AVAILABLE",
+            "key": "x"
+        },
+        "ipfs": {
+            "url": "https://ipfs.internal.citizenwallet.xyz"
+        },
+        "node": {
+            "url": "https://nd-056-883-012.p2pify.com/f8bf2a3b3713e71913e9e9074f79b671",
+            "ws_url": "wss://ws-nd-056-883-012.p2pify.com/f8bf2a3b3713e71913e9e9074f79b671"
+        },
+        "erc4337": {
+            "rpc_url": "https://api.stackup.sh/v1/node/d21e28a8eae6a3c8c289799557c0259dc584237169d9acdc740dd6f625df4f65",
+            "entrypoint_address": "0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789",
+            "account_factory_address": "0x9406Cc6185a346906296840746125a0E44976454",
+            "paymaster_rpc_url": "https://api.stackup.sh/v1/paymaster/d21e28a8eae6a3c8c289799557c0259dc584237169d9acdc740dd6f625df4f65",
+            "paymaster_type": "payg"
+        },
+        "token": {
+            "standard": "erc20",
+            "address": "0x07865c6E87B9F70255377e024ace6630C1Eaa37F",
+            "name": "USD Coin",
+            "symbol": "USDC",
+            "decimals": 6
+        },
+        "profile": {
+            "address": "0x07fB556f64B720Cea015cB7cd1522a80d21C6062"
+        },
+        "version": 1
+    },
+    {
+        "community": {
             "name": "EUR e-money",
             "description": "Token by Monerium EMI, a regulated entity, licensed in the EEA.",
             "url": "https://monerium.com/tokens/",
