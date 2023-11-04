@@ -25,8 +25,8 @@
         },
         "erc4337": {
             "rpc_url": "https://api.stackup.sh/v1/node/d21e28a8eae6a3c8c289799557c0259dc584237169d9acdc740dd6f625df4f65",
-            "entrypoint_address": "0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789",
-            "account_factory_address": "0x9406Cc6185a346906296840746125a0E44976454",
+            "entrypoint_address": "0x4ae3aE2D886600C832fd174713c8AeE604BCCE45",
+            "account_factory_address": "0x0F40a9b593B72B1f48B422f86b4Bd2d4e90c4Bab",
             "paymaster_rpc_url": "https://api.stackup.sh/v1/paymaster/d21e28a8eae6a3c8c289799557c0259dc584237169d9acdc740dd6f625df4f65",
             "paymaster_type": "payg"
         },
