@@ -56,6 +56,7 @@ dependencies:
   cached_network_image: ^3.2.3
   universal_html: ^2.2.4
   nfc_manager: ^3.3.0
+  walletconnect_flutter_v2: ^2.1.8
 dev_dependencies:
   flutter_launcher_icons: ^0.13.1
   flutter_lints: ^2.0.0
