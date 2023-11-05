@@ -1,8 +1,10 @@
+import 'package:citizenwallet/services/wallet_connect/wallet_connect_service.dart';
 import 'package:citizenwallet/theme/colors.dart';
 import 'package:citizenwallet/widgets/header.dart';
 import 'package:citizenwallet/widgets/scanner/scanner.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:go_router/go_router.dart';
 
 class WalletConnectModal extends StatefulWidget {
@@ -14,6 +16,13 @@ class WalletConnectModalState extends State<WalletConnectModal> {
   void handleDismiss(BuildContext context) {
     FocusManager.instance.primaryFocus?.unfocus();
     GoRouter.of(context).pop();
+  }
+
+  void handleScan(String value) {
+    Uri uri = Uri.parse(value);
+    var walletConnectService =
+        WalletConnectService(dotenv.get('WC_PROJECT_ID'));
+    walletConnectService.pair(uri);
   }
 
   @override
@@ -57,7 +66,7 @@ class WalletConnectModalState extends State<WalletConnectModal> {
                             Scanner(
                               height: scannerSize,
                               width: scannerSize,
-                              onScan: (value) => {print('scanned!! $value')},
+                              onScan: handleScan,
                             )
                           ],
                         ))
