@@ -17,7 +17,7 @@ class WalletActions extends StatelessWidget {
 
   final void Function()? handleSendModal;
   final void Function()? handleReceive;
-  final void Function()? handleCards;
+  final void Function()? handleWalletConnect;
   final void Function()? handleVouchers;
 
   WalletActions({
@@ -25,7 +25,7 @@ class WalletActions extends StatelessWidget {
     this.shrink = 0,
     this.handleSendModal,
     this.handleReceive,
-    this.handleCards,
+    this.handleWalletConnect,
     this.handleVouchers,
   }) : super(key: key);
 
@@ -274,10 +274,11 @@ class WalletActions extends StatelessWidget {
                           wallet?.locked == false &&
                           (!loading || !firstLoad) &&
                           handleSendModal != null &&
-                          handleCards != null)
+                          handleWalletConnect != null)
                         CupertinoButton(
                           padding: const EdgeInsets.all(5),
-                          onPressed: sendLoading ? () => () : handleCards,
+                          onPressed:
+                              sendLoading ? () => () : handleWalletConnect,
                           borderRadius: BorderRadius.circular(
                               progressiveClamp(14, 20, shrink)),
                           color: ThemeColors.background.resolveFrom(context),
@@ -289,7 +290,7 @@ class WalletActions extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Icon(
-                                  CupertinoIcons.creditcard,
+                                  CupertinoIcons.antenna_radiowaves_left_right,
                                   size: buttonIconSize,
                                   color: sendLoading
                                       ? ThemeColors.subtleEmphasis
@@ -297,7 +298,7 @@ class WalletActions extends StatelessWidget {
                                 ),
                                 const SizedBox(width: 10),
                                 Text(
-                                  'Cards',
+                                  'Connect',
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color: sendLoading

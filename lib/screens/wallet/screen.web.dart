@@ -506,6 +506,7 @@ class BurnerWalletScreenState extends State<BurnerWalletScreen> {
                       handleRefresh: handleRefresh,
                       handleSendModal: handleSendModal,
                       handleReceive: handleReceive,
+                      handleWalletConnect: () => (),
                       handleVouchers: handleVouchers,
                       handleTransactionTap: handleTransactionTap,
                       handleFailedTransactionTap: handleFailedTransaction,
