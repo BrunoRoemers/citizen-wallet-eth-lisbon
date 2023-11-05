@@ -1,6 +1,49 @@
 [
     {
         "community": {
+            "name": "Worgl",
+            "description": "Complementary local currency that builds up a participative community treasury over time",
+            "url": "https://github.com/acollette/TokenWithDemurrage/blob/main/contracts/BxlCoinDemurrage.sol",
+            "alias": "worgl.polygon",
+            "logo": "TODO"
+        },
+        "scan": {
+            "url": "https://polygonscan.com/",
+            "name": "PolygonScan"
+        },
+        "indexer": {
+            "url": "NOT_AVAILABLE",
+            "ipfs_url": "NOT_AVAILABLE",
+            "key": "x"
+        },
+        "ipfs": {
+            "url": "https://ipfs.internal.citizenwallet.xyz"
+        },
+        "node": {
+            "url": "https://polygon-mainnet.core.chainstack.com/93c1f10e9a4eed4b19444fcd17f7338b",
+            "ws_url": "wss://polygon-mainnet.core.chainstack.com/ws/93c1f10e9a4eed4b19444fcd17f7338b"
+        },
+        "erc4337": {
+            "rpc_url": "https://api.stackup.sh/v1/node/81e65a9de76dccf565bcd12169ad7b467e23a22c02984750b0817cd99b78c159",
+            "entrypoint_address": "0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789",
+            "account_factory_address": "0x9406Cc6185a346906296840746125a0E44976454",
+            "paymaster_rpc_url": "https://api.stackup.sh/v1/paymaster/81e65a9de76dccf565bcd12169ad7b467e23a22c02984750b0817cd99b78c159",
+            "paymaster_type": "payg"
+        },
+        "token": {
+            "standard": "erc20",
+            "address": "0x86DD9B2c78A6008a95CA786F3be1c6CE99B073bb",
+            "name": "Worgl",
+            "symbol": "Worgl",
+            "decimals": 6
+        },
+        "profile": {
+            "address": "0xF5F7317EDb8E88CaE09071B0C4F0fd6EA20B21f9"
+        },
+        "version": 1
+    },
+    {
+        "community": {
             "name": "USDC on Goerli",
             "description": "The community of people using USDC on Goerli Testnet.",
             "url": "https://goerli.net/",
